@@ -1,0 +1,465 @@
+/* ******* general ******* */
+h1 , h2 , h3 , h4 , h5 , h6
+{
+    font-weight: 700;
+    color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+.main-color
+{
+    background-color: #00c3da;
+}
+
+.bg-grey
+{
+    background-color: #f7f7f7;
+}
+
+
+.s-header
+{
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+
+.s-caption
+{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+
+.btn-solid
+{
+    color: #fff;
+    font: 500 0.9rem 'Poppins', sans-serif;
+    background-color: #00c3da;
+    padding: .75rem 1.5rem;
+    margin: 2rem .5rem;
+}
+
+.btn-solid:hover
+{
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+.btn-outline
+{
+    color: #fff;
+    font: 500 0.9rem 'Poppins', sans-serif;
+    padding: .75rem 1.5rem;
+    border: 1px solid #fff;
+}
+
+.btn-outline:hover
+{
+    transform: translateY(-1px);
+    background-color: #fff;
+}
+
+
+.btn-sharp
+{
+    font-size: 0.66rem;
+    padding: 1rem 2rem;
+    border: 1px solid #dedede;
+    border-radius: 0%;
+}
+
+.btn-sharp:hover
+{
+    color: #fff;
+    background-color: #000;
+}
+
+/* ******* nav ******* */
+
+nav a
+{
+    font: bold 13px 'Poppins', sans-serif;
+    color: #1f1f1f;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+nav i
+{
+    padding: .5rem;
+}
+
+nav .social-icons::after
+{
+    content: "";
+    position: absolute;
+    top: -25px;
+    right:90px;
+    background-color:#ccc;
+    width: 1px;
+    height: 70px;
+}
+
+
+
+
+
+/* ******* header ******* */
+header .carousel-item
+{
+    height: 100vh;
+}
+
+.header-caption
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,34,34, 0.6);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-title
+{
+    font-size: 6rem;
+    color: #fff;
+}
+
+@media only screen and (max-width:768px)
+{
+    .h-title {font-size: 3rem;}
+
+}
+
+.h-subtitle
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+header .carousel-control-prev i
+{
+    position: absolute;
+    left: 0;
+    top: 350px;
+    font-size: 2rem;
+    padding: .5rem;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+header .carousel-control-next i
+{
+    position: absolute;
+    left: 0;
+    top: 400px;
+    font-size: 2rem;
+    padding: .5rem;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* ******* about ******* */
+
+#about
+{
+    padding: 8rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.about-caption
+{
+    max-width: 45rem;
+    font-size: 1.5rem;
+}
+
+#about .type-anime::after
+{
+    content: "";
+    color: #00c3da;
+    animation: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+/* ******* team ******* */
+
+#team .member-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(00, 195, 218, 0.9);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 500ms transform , 500ms opacity;
+}
+
+#team .luke 
+{
+    animation: member;
+    animation-duration: 1s;
+}
+
+#team .jessica 
+{
+    animation: member;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+}
+
+#team .matt 
+{
+    animation: member;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+}
+
+#team .claire
+{
+    animation: member;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+}
+
+#team h2::after
+{
+    content: "C";
+    position: absolute;
+    right: 48%;
+    bottom: 7%;
+    font-size: 4rem;
+    color: #eee;
+    z-index: -1;
+}
+
+#team .member-overlay:hover 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.member-caption > h6,
+.member-caption > h5 
+{
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.member-icons i
+{
+    color: #fff;
+    padding: .25rem;
+}
+
+
+/* ******* what-we ******* */
+
+
+#what-we
+{
+    background-color: #00000099;
+    padding: 8rem 0;
+}
+
+#what-we h6
+{
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+#what-we ul
+{
+    animation: listing;
+    animation-duration: 1s;
+}
+
+#what-we h2,
+#what-we p,
+#what-we li
+{
+    color: #fff;
+    padding: .5rem 0;
+    font-weight: 400;
+}
+
+#what-we .shadow-icon 
+{
+    color: #fff;
+}
+
+#what-we .shadow-icon::after
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f053";
+    font-weight: 700;
+    color: rgb(0, 112, 103);
+    font-size: 3.5rem;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+
+/* ******* prices ******* */
+
+#prices > h2::before
+{
+    content: "C";
+    position: absolute;
+    right: 48%;
+    bottom: 7%;
+    font-size: 4rem;
+    color: #eee;
+    z-index: -1;
+}
+
+
+#prices sup
+{
+    font-size: 1rem;
+}
+
+#prices .price-content h2
+{
+    font-size: 3.5rem;
+    padding: 1rem 0;
+}
+
+#prices h6
+{
+    font-size:.75rem;
+    font-weight: 400;
+}
+
+#prices .price-content
+{
+    background-color: #fff;
+}
+
+#prices h6::after
+{
+    content: "";
+    position: absolute;
+    top: 140px;
+    right:50px;
+    background-color:#ddd;
+    width: 180px;
+    height: 1px;
+}
+
+#prices li
+{
+    list-style-type: none;
+    padding: .5rem;
+}
+
+#prices .best-value
+{
+    transform: translateY(-16px);
+    padding: 1rem 4rem;
+}
+
+#prices .best-value > h2
+{
+    color: #00c3da;
+}
+
+
+/* ******* testimonials ******* */
+
+#testimonials .item-content
+{
+    text-align: center;
+    margin: auto;
+    background-color: #fff;
+    padding: 0 4.5rem 4.5rem;
+}
+
+#testimonials li
+{
+    background-color: #00c3da;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+#testimonials img
+{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+}
+
+#testimonials i
+{
+    color: #444;
+}
+
+#testimonials .carousel-control-next i:hover
+{
+    color: #00c3da;
+    transform: translateX(5px);
+}
+
+#testimonials .carousel-control-prev i:hover
+{
+    color: #00c3da;
+    transform: translateX(-5px);
+}
+
+
+/* ******* contact ******* */
+
+iframe
+{
+    height: 40rem;
+}
+
+.f-header
+{
+    font-size: 2.25rem;
+}
+
+
+.f-caption
+{
+    font-size: 1.2rem;
+    padding-bottom: 4rem;
+}
+
+footer label
+{
+    font-family:'Poppins', sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+}

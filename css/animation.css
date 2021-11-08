@@ -1,0 +1,85 @@
+@keyframes typing
+{
+    0%{content: "";}
+    2%{content: "a|";}
+    4%{content: "ap|";}
+    6%{content: "app|";}
+    8%{content: "app|";}
+    10%{content: "app|";}
+    12%{content: "app";}
+    14%{content: "app|";}
+    16%{content: "app|";}
+    18%{content: "app|";}
+    20%{content: "app|";}
+    22%{content: "app|";}
+    24%{content: "app|";}
+    26%{content: "app|";}
+    28%{content: "app|";}
+    30%{content: "app|";}
+    32%{content: "ap";}
+    34%{content: "";}
+    36%{content: "";}
+    38%{content: "we";}
+    40%{content: "webs";}
+    42%{content: "websit";}
+    44%{content: "websites|";}
+    46%{content: "websites|";}
+    48%{content: "websites|";}
+    50%{content: "websites|";}
+    52%{content: "websites|";}
+    54%{content: "websites|";}
+    56%{content: "websites|";}
+    58%{content: "websites|";}
+    60%{content: "websites|";}
+    62%{content: "websit";}
+    64%{content: "web";}
+    66%{content: "";}
+    68%{content: "so";}
+    70%{content: "soft";}
+    72%{content: "softwa";}
+    74%{content: "software|";}
+    76%{content: "software|";}
+    78%{content: "software|";}
+    80%{content: "software|";}
+    82%{content: "software|";}
+    84%{content: "software|";}
+    86%{content: "software|";}
+    88%{content: "software|";}
+    90%{content: "software|";}
+    92%{content: "softwa";}
+    94%{content: "sof";}
+    96%{content: "";}
+    98%{content: "";}
+    100%{content: "";}
+}
+
+
+
+@keyframes member
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes listing
+{
+    0%
+    {
+        opacity: 0;
+        transform:translateX(400px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
